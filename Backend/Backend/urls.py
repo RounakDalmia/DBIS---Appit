@@ -8,7 +8,7 @@ from django.views.decorators.cache import never_cache
 urlpatterns = (
     [
         path('admin/', admin.site.urls),
-        path("backend/", include("backend_api.urls")),
+        path("api/", include("backend_api.urls")),
     ]
     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
